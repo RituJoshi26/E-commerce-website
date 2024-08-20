@@ -1,0 +1,26 @@
+@media only screen and (max-width:600px){
+	#mytable tbody,tr,td{
+		display:block;
+	}
+	#mytable thead{
+		position:absolute;
+		top:-9999px;
+		left:-9999px
+	}
+	#mytable td{
+		position:relative;
+		padding-left:50%;
+		border:none;
+		border-bottom:1px solid #ccc;
+	}
+	#mytable td::before{
+		content:attr(data-title);
+		position:absolute;
+		left:6px;
+		font-weight:bold;
+	}
+	#mytable tr{
+		border-bottom:1px solid #ccc;
+		
+	}
+}
